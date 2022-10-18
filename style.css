@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    background-color: antiquewhite;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div.seat{
+    border: 2px solid red;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+
+}
+.seat.selected{
+    background-color: aqua;
+}
+.seat.occupied{
+    background-color: grey;
+}
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}

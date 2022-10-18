@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>movie seat booking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="js/bootstrap.bundle.js" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar bg-secondary navbar-dark">
+            <div class="container-fluid">
+              <a style="display: flex;" class="navbar-brand" href="#">
+                <div style="margin-right:20px ;">
+                  <label>Select Movies</label>
+                  <select id="ticket" class="form-select" style="border-style: none;">
+                    <option value="60">Avenger(60 RS)</option>
+                    <option value="80">Jocker(80 RS)</option>
+                    <option value="100">Toy story(100 RS)</option>
+                  </select>
+                </div>
+                <div style="display: flex;">
+                  <div style="margin-right:20px ;">
+                    <label>Select Tickets</label>
+                    <select id="tkt" class="form-select" style="border-style: none;">
+                      <option id="t1" value="2">Couple tickets</option>
+                      <option id="t2" value="5">5 tickets</option>
+                      <option id="t3" value="7">7 tickets</option>
+                    </select>
+                  </div>
+                  <div type="button" style="border-style: none; margin-left: 1100px;">close &#215;</div>
+                </div>
+              </a>
+            </div>
+            
+          </nav>
+
+          <header>
+            <div class=" p-3" style="background-color:aliceblue;">
+              <button>6:55pm | iMax</button>
+              <button>8:55pm | Multiplex</button>
+            </div>
+          </header>
+
+            <div class="seat selected"></div>
+            <small>Selected</small>
+           
+          
+          <main>
+            <div class="container">
+              <div class="row m-5">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row m-5">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row m-5">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row m-5">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row m-5">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat "></div>
+                <div class="seat"></div>
+                <div class="seat "></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+            </div>
+            
+          </main>
+          
+          <footer class="d-grid p-2 bg-info" style="box-shadow: 10px 5px 8px 5px #888888;">
+            <button type="button" class="btn btn-primary "> <span id="amount">0</span>number of seats
+              having price of<span id="total">&nbsp;0</span>
+            </button>
+          </footer>
+
+
+        
+          
+        <script src="script.js"></script>
+    </body>
+</html>
